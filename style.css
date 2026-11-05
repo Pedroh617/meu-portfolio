@@ -257,3 +257,16 @@ nav a {
         padding: 14px 25px;
     }
 }
+
+/* ===== ANIMAÇÃO DE ENTRADA ===== */
+
+.revelar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.revelar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
