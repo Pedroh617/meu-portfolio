@@ -1,15 +1,259 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #111827;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #101c30, #193c56);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* ===== MENU SUPERIOR ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 12%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(16, 28, 48, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #50e3c2, #a855f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #50e3c2;
+}
+
+/* ===== SEÇÕES ===== */
+
+section {
+    padding: 100px 12%;
+    scroll-margin-top: 75px;
+}
+
+/* ===== INÍCIO ===== */
+
+.inicio {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.apresentacao {
+    max-width: 550px;
+}
+
+.saudacao {
+    color: #50e3c2;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 h1 {
-    color: #38bdf8;
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-p {
-    font-size: 18px;
+h1 span {
+    background: linear-gradient(90deg, #50e3c2, #a855f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.profissao {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    color: #aebdce;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ===== BOTÕES ===== */
+
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 16px 35px;
+    background: #50e3c2;
+    color: #102033;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #a855f7;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 25px #50e3c255;
+}
+
+/* ===== FOTO / ILUSTRAÇÃO ===== */
+
+.foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #50e3c2, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    box-shadow: 0 0 60px #50e3c233;
+}
+
+/* ===== TÍTULOS ===== */
+
+.titulo {
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #50e3c2;
+}
+
+/* ===== CARTÕES ===== */
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.cartao {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-7px);
+    border-color: #50e3c2;
+    box-shadow: 0 10px 30px #00000033;
+}
+
+.cartao h3 {
+    color: #50e3c2;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.cartao p {
+    color: #b7c4d3;
+    line-height: 1.7;
+}
+
+/* ===== CONTATO ===== */
+
+.contato {
+    text-align: center;
+}
+
+.contato .descricao {
+    margin: auto;
+    max-width: 600px;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #aebdce;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    background: #101c30;
+}
+
+/* ===== ANIMAÇÕES ===== */
+
+.cartao,
+.botao,
+nav a {
+    transition: all 0.3s ease;
+}
+
+/* ===== CELULARES E TABLETS ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .profissao {
+        font-size: 22px;
+    }
+
+    .foto {
+        width: 220px;
+        height: 220px;
+        font-size: 70px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .botao {
+        padding: 14px 25px;
+    }
 }
