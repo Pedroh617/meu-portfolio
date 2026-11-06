@@ -1,158 +1,312 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Henrique | Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pedro Henrique">
+  <title>Pedro.Dev | Portfólio</title>
 
-   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">Pedro Henrique</div>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#formacao">Formação</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>Pedro<span class="blue">.Dev</span></span>
+    </a>
 
-    <section class="inicio" id="inicio">
+    <span class="status">
+      <span class="status-dot"></span>
+      Em desenvolvimento
+    </span>
+  </header>
 
-        <div class="apresentacao">
-            <p class="saudacao">Olá, eu sou</p>
+  <main>
 
-            <h1><span>Pedro Henrique</span></h1>
+    <!-- INÍCIO -->
+    <section class="hero section" id="inicio">
 
-            <p class="profissao">
-                Estudante de Tecnologia
-            </p>
+      <div class="hero-copy">
 
-            <p class="descricao">
-                Sou estudante de Análise e Desenvolvimento
-                de Sistemas na UNISUAM. Estou iniciando minha
-                jornada na programação e desenvolvendo
-                projetos para evoluir minhas habilidades
-                na área de tecnologia.
-            </p>
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          OLÁ, EU SOU
+        </span>
 
-            <a href="#contato" class="botao">
-                Entre em contato
-            </a>
-        </div>
+        <h1>Pedro <span class="blue">Henrique</span></h1>
 
-        <div class="foto">
-            💻
-        </div>
+        <h2>
+          Desenvolvedor em formação
+          <span class="cursor">|</span>
+        </h2>
 
-    </section>
-
-    <section id="sobre">
-        <h2 class="titulo">Sobre mim</h2>
-
-        <div class="cartao">
-            <p>
-                Meu nome é Pedro Henrique. Sou estudante de
-                Análise e Desenvolvimento de Sistemas na
-                UNISUAM e tenho interesse em programação,
-                desenvolvimento de software e tecnologia.
-                Este portfólio apresenta minha evolução,
-                meus estudos e meus projetos.
-            </p>
-        </div>
-    </section>
-
-    <section id="tecnologias">
-        <h2 class="titulo">Tecnologias</h2>
-
-        <div class="cartoes">
-            <div class="cartao">
-                <h3>HTML</h3>
-                <p>Estruturação de páginas web.</p>
-            </div>
-
-            <div class="cartao">
-                <h3>CSS</h3>
-                <p>Estilização e design de sites.</p>
-            </div>
-
-            <div class="cartao">
-                <h3>JavaScript</h3>
-                <p>Interatividade e programação web.</p>
-            </div>
-
-            <div class="cartao">
-                <h3>GitHub</h3>
-                <p>Versionamento e armazenamento de projetos.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos">
-        <h2 class="titulo">Meus projetos</h2>
-
-        <div class="cartoes">
-            <div class="cartao">
-                <h3>Meu Portfólio</h3>
-                <p>Meu primeiro site desenvolvido com HTML e CSS.</p>
-            </div>
-
-            <div class="cartao">
-                <h3>Projeto 02</h3>
-                <p>Em breve, um novo projeto de programação.</p>
-            </div>
-
-            <div class="cartao">
-                <h3>Projeto 03</h3>
-                <p>Em breve, mais novidades por aqui.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="formacao">
-        <h2 class="titulo">Formação</h2>
-
-        <div class="cartao">
-            <h3>UNISUAM</h3>
-            <p>
-                Tecnologia em Análise e Desenvolvimento
-                de Sistemas.
-            </p>
-            <p>Modalidade: EAD</p>
-        </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2 class="titulo">Vamos conversar?</h2>
-
-        <p class="descricao">
-            Obrigado por visitar meu portfólio!
-            Entre em contato comigo.
+        <p class="intro">
+          Estudante de Análise e Desenvolvimento de Sistemas
+          na <strong>UNISUAM</strong>, explorando programação,
+          tecnologia e novas ideias.
         </p>
 
-        <a href="https://github.com/Pedroh617"
-           class="botao" target="_blank">
-            Meu GitHub
+        <a class="primary-button" href="#projetos">
+          <span class="button-icon">&lt;/&gt;</span>
+          Explorar meu portfólio
+          <span class="arrow">↗</span>
         </a>
 
-        <a href="https://www.linkedin.com/"
-           class="botao" target="_blank">
-            Meu LinkedIn
-        </a>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="mailto:SEU-EMAIL-AQUI" aria-label="E-mail">✉</a>
+        </div>
+
+      </div>
+
+      <!-- ILUSTRAÇÃO TECNOLÓGICA -->
+      <div class="hero-art">
+
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <div class="code-window">
+
+          <div class="window-top">
+            <i></i><i></i><i></i>
+            <span>meu-portfolio.js</span>
+          </div>
+
+          <div class="code-lines">
+            <p><span class="code-purple">const</span> pedro = {</p>
+            <p class="indent">
+              <span class="code-blue">area</span>:
+              <span class="code-green">'Tecnologia'</span>,
+            </p>
+            <p class="indent">
+              <span class="code-blue">foco</span>:
+              <span class="code-green">'Desenvolvimento'</span>,
+            </p>
+            <p class="indent">
+              <span class="code-blue">status</span>:
+              <span class="code-green">'Aprendendo sempre'</span>
+            </p>
+            <p>};</p>
+            <p class="code-comment">
+              // construindo o próximo projeto
+            </p>
+            <div class="terminal-cursor"></div>
+          </div>
+
+        </div>
+
+        <div class="floating-chip chip-one">HTML</div>
+        <div class="floating-chip chip-two">CSS</div>
+        <div class="floating-chip chip-three">JS</div>
+
+        <div class="art-caption">
+          APRENDER • DESENVOLVER • EVOLUIR
+        </div>
+
+      </div>
+
     </section>
 
-   <footer>
-    <p>© <span id="ano"></span> Pedro Henrique - Todos os direitos reservados.</p>
-</footer>
+    <!-- MENU FLUTUANTE -->
+    <nav class="floating-nav" aria-label="Menu principal">
 
-<script src="script.js"></script>
+      <a class="nav-item active" href="#inicio">
+        <span class="nav-icon">⌂</span>
+        <span class="nav-copy">
+          <strong>Início</strong>
+          <small>Volte ao começo</small>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+
+      <a class="nav-item" href="#sobre">
+        <span class="nav-icon">◉</span>
+        <span class="nav-copy">
+          <strong>Sobre mim</strong>
+          <small>Conheça minha história</small>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+
+      <a class="nav-item" href="#projetos">
+        <span class="nav-icon">&lt;/&gt;</span>
+        <span class="nav-copy">
+          <strong>Projetos</strong>
+          <small>Veja meus trabalhos</small>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+
+      <a class="nav-item" href="#habilidades">
+        <span class="nav-icon">⚙</span>
+        <span class="nav-copy">
+          <strong>Habilidades</strong>
+          <small>O que estou aprendendo</small>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+
+      <a class="nav-item" href="#contato">
+        <span class="nav-icon">✉</span>
+        <span class="nav-copy">
+          <strong>Contato</strong>
+          <small>Vamos conversar</small>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+
+    </nav>
+
+    <!-- SOBRE MIM -->
+    <section class="content-section section" id="sobre">
+
+      <div class="section-heading">
+        <span class="section-kicker">01 / SOBRE</span>
+        <h2>Um pouco <span class="blue">sobre mim</span></h2>
+      </div>
+
+      <div class="glass-panel">
+        <p>
+          Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>
+          na UNISUAM e estou construindo minha jornada na área de tecnologia.
+          Este espaço reúne meus estudos, experiências e projetos práticos.
+        </p>
+
+        <p>
+          Meu objetivo é aprender continuamente, desenvolver soluções
+          e evoluir como profissional.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="content-section section" id="projetos">
+
+      <div class="section-heading">
+        <span class="section-kicker">02 / PORTFÓLIO</span>
+        <h2>Meus <span class="blue">projetos</span></h2>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <span class="project-number">PROJETO 01</span>
+          <div class="project-symbol">&lt;/&gt;</div>
+          <h3>Meu primeiro site</h3>
+          <p>
+            Meu portfólio pessoal, criado para praticar
+            HTML, CSS e JavaScript.
+          </p>
+          <span class="project-tag">HTML · CSS · JavaScript</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJETO 02</span>
+          <div class="project-symbol">✧</div>
+          <h3>Em construção</h3>
+          <p>
+            Este espaço será atualizado quando eu desenvolver
+            um novo projeto.
+          </p>
+          <span class="project-tag">EM BREVE</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJETO 03</span>
+          <div class="project-symbol">⌘</div>
+          <h3>Próxima ideia</h3>
+          <p>
+            Novas experiências e projetos serão adicionados aqui.
+          </p>
+          <span class="project-tag">EM BREVE</span>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="content-section section" id="habilidades">
+
+      <div class="section-heading">
+        <span class="section-kicker">03 / TECNOLOGIAS</span>
+        <h2>Minhas <span class="blue">habilidades</span></h2>
+      </div>
+
+      <div class="skills-panel">
+
+        <div class="skill">
+          <span>HTML</span>
+          <div class="skill-track"><i style="width:45%"></i></div>
+          <small>Em aprendizado</small>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="skill-track"><i style="width:35%"></i></div>
+          <small>Em aprendizado</small>
+        </div>
+
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="skill-track"><i style="width:15%"></i></div>
+          <small>Iniciando</small>
+        </div>
+
+        <p class="note">
+          Os indicadores são ilustrativos. Atualize-os conforme sua evolução.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="content-section section" id="contato">
+
+      <div class="section-heading">
+        <span class="section-kicker">04 / CONTATO</span>
+        <h2>Vamos <span class="blue">conversar?</span></h2>
+      </div>
+
+      <div class="glass-panel contact-panel">
+
+        <p>
+          Quer conhecer meus projetos ou trocar uma ideia sobre tecnologia?
+        </p>
+
+        <a class="primary-button" href="mailto:SEU-EMAIL-AQUI">
+          ✉ &nbsp; Entre em contato
+          <span class="arrow">↗</span>
+        </a>
+
+        <p class="note">
+          Substitua SEU-EMAIL-AQUI pelo seu endereço de e-mail.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Pedro.Dev</span>
+    <span>Feito com curiosidade e código.</span>
+  </footer>
 
 </body>
 </html>
